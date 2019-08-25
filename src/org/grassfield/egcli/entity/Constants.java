@@ -1,4 +1,4 @@
-package org.grassfield.eg;
+package org.grassfield.egcli.entity;
 
 public class Constants {
 

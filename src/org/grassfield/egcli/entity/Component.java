@@ -1,10 +1,10 @@
-package org.grassfield.eg;
+package org.grassfield.egcli.entity;
 
 import java.util.List;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.grassfield.eg.entity.util.Utilities;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * This is an entity class that represents the eG Component.
@@ -12,7 +12,7 @@ import org.grassfield.eg.entity.util.Utilities;
  *
  */
 public class Component implements Comparable<Component>{
-	private Logger logger = LogManager.getLogger(Component.class);
+	static Logger logger = LoggerFactory.getLogger(Component.class);
 	protected String type;
 	protected String ip;
 	protected String hostname;

@@ -1,4 +1,4 @@
-package org.grassfield.eg;
+package org.grassfield.egcli.entity;
 
 /**
  * This an entity class for External agent. This is the subclass of Agent.

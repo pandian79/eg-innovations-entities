@@ -1,4 +1,4 @@
-package org.grassfield.eg;
+package org.grassfield.egcli.entity;
 
 /**
  * This is an entity class for the eG Agent. 
@@ -16,14 +16,15 @@ public class Agent {
 	 */
 	String hostIp;
 	/**
-	 * To eG manager the agent is reporting
-	 */
-	String reportingManager;
-	/**
 	 * @param line agentname,hostIp format
 	 */
 	public Agent(String line) {
 		String[] tokens = line.split(",");
+		this.agentName=tokens[0];
+		this.hostIp=tokens[1];
+	}
+	public Agent(String line, String delimiter) {
+		String[] tokens = line.split(delimiter);
 		this.agentName=tokens[0];
 		this.hostIp=tokens[1];
 	}
@@ -42,10 +43,9 @@ public class Agent {
 	public void setHostIp(String hostIp) {
 		this.hostIp = hostIp;
 	}
-	public String getReportingManager() {
-		return reportingManager;
+	@Override
+	public String toString() {
+		return "Agent [agentName=" + agentName + ", hostIp=" + hostIp + "]";
 	}
-	public void setReportingManager(String reportingManager) {
-		this.reportingManager = reportingManager;
-	}
+	
 }

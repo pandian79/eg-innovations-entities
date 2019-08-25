@@ -1,4 +1,4 @@
-package org.grassfield.eg;
+package org.grassfield.egcli.entity;
 
 /**
  * This is an entity class for eG primary/secondary managers.
