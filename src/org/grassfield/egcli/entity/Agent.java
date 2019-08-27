@@ -25,6 +25,9 @@ public class Agent {
 	}
 	public Agent(String line, String delimiter) {
 		String[] tokens = line.split(delimiter);
+		if (tokens.length<2) {
+			throw new UnrecognizedAgentException(line+" and "+delimiter+" looks invalid");
+		}
 		this.agentName=tokens[0];
 		this.hostIp=tokens[1];
 	}

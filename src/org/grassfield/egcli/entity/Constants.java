@@ -17,5 +17,6 @@ public class Constants {
 	public static final String ASSOCIATE_AGENTS_TO_MANAGER = "ASSOCIATE AGENTS TO MANAGER";
 	public static final String QUOTE = "\"";
 	public static final String CSV_SPLIT_WITH_QUOTE = ",(?=([^\"]*\"[^\"]*\")*[^\"]*$)";
+	public static final String COLON = ":";
 
 }
