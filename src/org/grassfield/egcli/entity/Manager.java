@@ -7,8 +7,17 @@ package org.grassfield.egcli.entity;
  */
 public class Manager {
 	private static final String EQUAL = "=";
+	/**
+	 * Manager name
+	 */
 	String name;
+	/**
+	 * IP of the manager
+	 */
 	String ip;
+	/**
+	 * Cluster type
+	 */
 	String redundancyType;
 	/**
 	 * @param rline 192.168.1.115=192.168.1.115

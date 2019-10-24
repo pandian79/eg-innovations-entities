@@ -3,7 +3,7 @@ package org.grassfield.egcli.entity;
 /**
  * This is an entity class for the eG Agent. 
  * This is the parent class for other agent classes.
- * @author Murugapandian
+ * @author Ramaiah Murugapandian
  *
  */
 public class Agent {
@@ -23,6 +23,10 @@ public class Agent {
 		this.agentName=tokens[0];
 		this.hostIp=tokens[1];
 	}
+	/**
+	 * @param line agent details in agentname,hostIp format. 
+	 * @param delimiter Specify the delimiter to be used to split the line parameter
+	 */
 	public Agent(String line, String delimiter) {
 		String[] tokens = line.split(delimiter);
 		if (tokens.length<2) {

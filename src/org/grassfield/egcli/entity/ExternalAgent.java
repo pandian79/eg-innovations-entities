@@ -8,6 +8,9 @@ package org.grassfield.egcli.entity;
 public class ExternalAgent extends Agent {
 	String clientEmulation="no";
 
+	/**
+	 * @param line External agent name in name,ip format
+	 */
 	public ExternalAgent(String line) {
 		String[] tokens = line.split(",");
 		super.agentName=tokens[0];

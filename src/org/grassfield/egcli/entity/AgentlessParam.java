@@ -1,11 +1,34 @@
 package org.grassfield.egcli.entity;
 
+/**
+ * Parameters needed for a component monitored without an internal agent
+ * @author Ramaiah Murugapandian
+ *
+ */
 public class AgentlessParam {
+	/**
+	 * Username to monitor the server
+	 */
 	String user;
+	/**
+	 * Password of user to monitor the server
+	 */
 	String password;
+	/**
+	 * Method of monitoring. SNMP or JMX or WMI etc
+	 */
 	String mode;
+	/**
+	 * Operating System of the target server to be monitored
+	 */
 	String os;
+	/**
+	 * Port of the application/server to be monitored
+	 */
 	String remotePort;
+	/**
+	 * If any encryption is needed, the type will be mentioned here
+	 */
 	String encryptionType;
 	public String getUser() {
 		return user;
@@ -42,6 +65,11 @@ public class AgentlessParam {
 	}
 	public void setEncryptionType(String encryptionType) {
 		this.encryptionType = encryptionType;
+	}
+	@Override
+	public String toString() {
+		return "AgentlessParam [user=" + user + ", password=" + password + ", mode=" + mode + ", os=" + os
+				+ ", remotePort=" + remotePort + ", encryptionType=" + encryptionType + "]";
 	}
 	
 }

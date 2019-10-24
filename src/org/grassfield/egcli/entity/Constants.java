@@ -1,5 +1,10 @@
 package org.grassfield.egcli.entity;
 
+/**
+ * Constants
+ * @author Ramaiah Murugapandian
+ *
+ */
 public class Constants {
 
 	public static final String COMMA = ",";

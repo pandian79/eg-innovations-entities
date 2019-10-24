@@ -10,10 +10,25 @@ import org.slf4j.LoggerFactory;
  */
 public class Component implements Comparable<Component>{
 	static Logger logger = LoggerFactory.getLogger(Component.class);
+	/**
+	 * Component type like Microsoft Windows, Microsoft SQL etc
+	 */
 	protected String type;
+	/**
+	 * IP of the component
+	 */
 	protected String ip;
+	/**
+	 * Hostname or nickname of the component
+	 */
 	protected String hostname;
+	/**
+	 * If it is a port based application, mention the port number. else specify NULL
+	 */
 	protected String port;
+	/**
+	 * If this is an Oracle application, mention its SID
+	 */
 	protected String sid;
 	
 	public Component() {
