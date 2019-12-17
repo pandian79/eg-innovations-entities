@@ -1,26 +1,23 @@
 package org.grassfield.egcli.entity;
 
+import java.util.List;
+
 /**
  * Pojo class for Maintenance Policy
  * @author Ramaiah Murugapandian
  *
  */
 public class MaintenancePolicy {
-	/**
-	 * Maintenance policy name
-	 */
-	private String name;
+    /**
+     * Maintenance policy name
+     */
+    private List<String> policyName;
 
-	public MaintenancePolicy(String name) {
-		this.name=name;
-	}
+    public List<String> getPolicyName() {
+        return policyName;
+    }
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
+    public void setPolicyName(List<String> policyName) {
+        this.policyName = policyName;
+    }
 }

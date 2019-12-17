@@ -6,37 +6,37 @@ package org.grassfield.egcli.entity;
  *
  */
 public class ExternalAgent extends Agent {
-	String clientEmulation="no";
+    String clientEmulation="no";
 
-	/**
-	 * @param line External agent name in name,ip format
-	 */
-	public ExternalAgent(String line) {
-		String[] tokens = line.split(",");
-		super.agentName=tokens[0];
-		super.hostIp=tokens[1];
-		try {
-			this.clientEmulation=tokens[2];
-		} catch (Exception e) {
-			//suppressing this exception as cli does not give client emulation status
-		}
-	}
+    /**
+     * @param line External agent name in name,ip format
+     */
+    public ExternalAgent(String line) {
+        String[] tokens = line.split(",");
+        super.agentName=tokens[0];
+        super.hostIp=tokens[1];
+        try {
+            this.clientEmulation=tokens[2];
+        } catch (Exception e) {
+            //suppressing this exception as cli does not give client emulation status
+        }
+    }
 
-	public ExternalAgent() {
-		super();
-	}
+    public ExternalAgent() {
+        super();
+    }
 
-	public String getClientEmulation() {
-		return clientEmulation;
-	}
+    public String getClientEmulation() {
+        return clientEmulation;
+    }
 
-	public void setClientEmulation(String clientEmulation) {
-		this.clientEmulation = clientEmulation;
-	}
+    public void setClientEmulation(String clientEmulation) {
+        this.clientEmulation = clientEmulation;
+    }
 
-	@Override
-	public String toString() {
-		return "ExternalAgent [clientEmulation=" + clientEmulation + ", agentName=" + agentName + ", hostIp=" + hostIp
-				+ "]";
-	}
+    @Override
+    public String toString() {
+        return "ExternalAgent [clientEmulation=" + clientEmulation + ", agentName=" + agentName + ", hostIp=" + hostIp
+                + "]";
+    }
 }
