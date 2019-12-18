@@ -10,6 +10,7 @@ org\grassfield\egcli\entity\AgentlessParam.class
 org\grassfield\egcli\entity\TestType.class
 org\grassfield\eg\validation\ComponentValidator.class
 org\grassfield\egcli\entity\UnrecognizedAgentException.class
+org\grassfield\egcli\entity\MaintenancePolicyAssociatedElements.class
 org\grassfield\egcli\entity\Component.class
 org\grassfield\egcli\entity\TestsDetails.class
 org\grassfield\egcli\entity\EnableDisableTests.class

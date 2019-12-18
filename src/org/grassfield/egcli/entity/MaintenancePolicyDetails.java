@@ -2,18 +2,20 @@ package org.grassfield.egcli.entity;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
 /**
  * Pojo class for Maintenance Policy Details
- *
+ * @author Logesh Chandiran
  */
+@JsonInclude(Include.NON_NULL)
 public class MaintenancePolicyDetails {
-    
-    private String policyName;
-    private String policyStatus;
-    private List<String> policySchedule;
-    private String nextScheduleDate;
-    private List<String> associatedElements;
-    private List<String> components;
+    private String policyName = null;
+    private String policyStatus = null;
+    private List<String> policySchedule = null;
+    private String nextScheduleDate = null;
+    private MaintenancePolicyAssociatedElements associatedElements = null;
     
     public String getPolicyName() {
         return policyName;
@@ -39,17 +41,10 @@ public class MaintenancePolicyDetails {
     public void setNextScheduleDate(String nextScheduleDate) {
         this.nextScheduleDate = nextScheduleDate;
     }
-    public List<String> getAssociatedElements() {
+    public MaintenancePolicyAssociatedElements getAssociatedElements() {
         return associatedElements;
     }
-    public void setAssociatedElements(List<String> associatedElements) {
+    public void setAssociatedElements(MaintenancePolicyAssociatedElements associatedElements) {
         this.associatedElements = associatedElements;
     }
-    public List<String> getComponents() {
-        return components;
-    }
-    public void setComponents(List<String> components) {
-        this.components = components;
-    }
-    
 }
